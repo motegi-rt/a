@@ -1,154 +1,142 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>画像と埋め込みコンテンツ</title>
-  </head>
 
-  <body>
-    <!-- ここから下要素を記述していきます -->
-    <img src="画像データの場所" alt="画像の説明" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>画像と埋め込みコンテンツ</title>
+</head>
 
-    <hr />
+<body>
+  <!-- ここから下要素を記述していきます -->
+  <img src="画像データの場所" alt="画像の説明" />
 
-    <img
-      src="https://pbs.twimg.com/media/EXzrF8JXkAAu-bS.jpg"
-      alt="自作の逆チルトパームレスト"
-    />
+  <hr />
 
-    <hr />
+  <img src="https://pbs.twimg.com/media/EXzrF8JXkAAu-bS.jpg" alt="自作の逆チルトパームレスト" />
 
-    <img src="photo.jpg" alt="自作の逆チルトパームレスト" />
+  <hr />
 
-    <hr />
+  <img src="photo.jpg" alt="自作の逆チルトパームレスト" />
 
+  <hr />
+
+  <img src="photo.jpg" width="300" />
+
+  <hr />
+
+  <p>
+    世の中にはコーヒーがいっぱいあります
     <img src="photo.jpg" width="300" />
+    しかし、コーヒーはとても苦いです。
+  </p>
 
-    <hr />
+  <hr />
 
-    <p>
-        世の中にはコーヒーがいっぱいあります
-      <img src="photo.jpg" width="300" />
-      しかし、コーヒーはとても苦いです。
-    </p>
+  <p>
+    width=200<br />
+    <img src="photo.jpg" width="200" />
+  </p>
+  <p>
+    height=200<br />
+    <img src="photo.jpg" height="200" />
+  </p>
 
-    <hr />
+  <hr />
 
-    <p>
-      width=200<br />
-      <img src="photo.jpg" width="200" />
-    </p>
-    <p>
-      height=200<br />
-      <img src="photo.jpg" height="200" />
-    </p>
+  <img src="photo.jpg" width="200" height="200" />
 
-    <hr />
+  <hr />
 
-    <img src="photo.jpg" width="200" height="200" />
+  <img src="photo.jpg" />
+  <img src="./photo.jpg" />
 
-    <hr />
+  <hr />
 
-    <img src="photo.jpg" />
-    <img src="./photo.jpg" />
+  <img src="Images/photo.jpg" />
+  <img src="./Images/photo.jpg" />
 
-    <hr />
+  <hr />
 
-    <img src="Images/photo.jpg" />
-    <img src="./Images/photo.jpg" />
+  <img src="../images/photo.jpg" />
 
-    <hr />
+  <hr />
 
-    <img src="../images/photo.jpg" />
+  <video autoplay muted controls width="600">
+    <source src="video.webm" type="video/webm" />
+    <source src="video.mp4" type="video/mp4" />
+    <p>動画が表示されないとき（ブラウザーが未対応など）に表示する文言</p>
+  </video>
 
-    <hr />
+  <hr />
 
-    <video autoplay muted controls width="600">
-      <source src="video.webm" type="video/webm" />
-      <source src="video.mp4" type="video/mp4" />
-      <p>動画が表示されないとき（ブラウザーが未対応など）に表示する文言</p>
-    </video>
+  <audio controls loop>
+    <source src="music.mp3" type="audio/mpeg" />
+    <p>MP3に未対応です。</p>
+  </audio>
 
-    <hr />
+  <hr />
 
-    <audio controls loop>
-      <source src="music.mp3" type="audio/mpeg" />
-      <p>MP3に未対応です。</p>
-    </audio>
+  <video controls width="600" src="video.mp4" type="video/mp4"></video>
 
-    <hr />
+  <hr />
 
-    <video controls width="600" src="video.mp4" type="video/mp4"></video>
+  <figure>
+    <img src="../Images/photo.jpg" width="400" />
+    <figcaption>コーヒーちゃん</figcaption>
+  </figure>
 
-    <hr />
+  <hr />
 
-    <figure>
-      <img src="../Images/photo.jpg" width="400" />
-      <figcaption>コーヒーちゃん</figcaption>
-    </figure>
+  <figute>
+    <figcaption>表3:家来たちの声</figcaption>
+    <table border="1">
+      <tr>
+        <td>犬</td>
+        <td>猿</td>
+        <td>雉</td>
+      </tr>
+      <tr>
+        <td>ワン</td>
+        <td>キー</td>
+        <td>つらみ</td>
+      </tr>
+    </table>
+  </figute>
 
-    <hr />
+  <hr />
 
-    <figute>
-      <figcaption>表3:家来たちの声</figcaption>
-      <table border="1">
-        <tr>
-          <td>犬</td>
-          <td>猿</td>
-          <td>雉</td>
-        </tr>
-        <tr>
-          <td>ワン</td>
-          <td>キー</td>
-          <td>つらみ</td>
-        </tr>
-      </table>
-    </figute>
+  <figure>
+    <blockquote>
+      <p>
+        もちろん鬼にも鬼の事情というものがある。
+        そんなことは「鬼滅の刃」を読んでなくとも知っている。
+        しかし、私にも私の事情があるのだ。
+        おじいにせがんで幟まで作ってもらったのに手ぶらでは帰れないだろう。
+      </p>
+    </blockquote>
+    <figcaption>鬼滅の刃 1巻</figcaption>
+  </figure>
 
-    <hr />
+  <hr />
 
-    <figure>
-      <blockquote>
-        <p>
-          もちろん鬼にも鬼の事情というものがある。
-          そんなことは「鬼滅の刃」を読んでなくとも知っている。
-          しかし、私にも私の事情があるのだ。
-          おじいにせがんで幟まで作ってもらったのに手ぶらでは帰れないだろう。
-        </p>
-      </blockquote>
-      <figcaption>鬼滅の刃 1巻</figcaption>
-    </figure>
+  <h1>iframe要素による埋め込み</h1>
+  <p>この下に埋め込んでみましょう。</p>
 
-    <hr />
+  <h1>iframe要素による埋め込み</h1>
+  <p>この下に埋め込んでみましょう。</p>
 
-    <h1>iframe要素による埋め込み</h1>
-    <p>この下に埋め込んでみましょう。</p>
+  <iframe title="ウェブ勉強会サークル UebXli" width="500" height="300" src="https://uebxli.github.io/">
+  </iframe>
 
-    <h1>iframe要素による埋め込み</h1>
-    <p>この下に埋め込んでみましょう。</p>
+  <p>この上に埋め込まれています。</p>
 
-    <iframe
-      title="ウェブ勉強会サークル UebXli"
-      width="500"
-      height="300"
-      src="https://uebxli.github.io/"
-    >
-    </iframe>
+  <hr />
 
-    <p>この上に埋め込まれています。</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/GIsGz9eZoMk" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</body>
 
-    <hr />
-
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/GIsGz9eZoMk"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    >
-    </iframe>
-  </body>
 </html>
