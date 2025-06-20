@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>画像と埋め込みコンテンツ</title>
+</head>
+
+<body>
+    <!-- ここから下要素を記述していきます -->
+    <img src="画像データの場所" alt="画像の説明">
+
+    <br>
+
+    <img
+    src="https://pbs.twimg.com/media/EXzrF8JXkAAu-bS.jpg"
+    alt="自作の逆チルトパームレスト"
+    >
+
+    <br>
+
+    <img src="photo.jpg" alt="自作の逆チルトパームレスト">
+
+    <br>
+
+    <img src="photo.jpg" width="300">
+
+    <br>
+
+    <p>
+        世の中にはコーヒーがいっぱいあります
+        <img src="photo.jpg" width="300">
+        しかし、コーヒーはとても苦いです。
+    </p>
+
+    <br>
+
+    <p>
+        width=200<br>
+        <img src="photo.jpg" width="200">
+    </p>
+    <p>
+        height=200<br>
+        <img src="photo.jpg" height="200">
+    </p>
+
+    <br>
+
+    <img src="photo.jpg" width="200" height="200">
+
+    <br>
+
+
+    <img src="photo.jpg">
+    <img src="./photo.jpg">
+
+    <br>
+
+    <img src="Images/photo.jpg">
+    <img src="./Images/photo.jpg">
+
+    <br>
+
+    <img src="../images/photo.jpg">
+
+    <br>
+
+    <video autoplay muted controls width="600">
+        <source src="video.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <p>動画が表示されないとき（ブラウザーが未対応など）に表示する文言</p>
+    </video>
+
+    <br>
+
+    <audio controls loop>
+        <source src="music.mp3" type="audio/mpeg">
+        <p>MP3に未対応です。</p>
+    </audio>
+
+    <br>
+
+    <video controls width="600" src="video.mp4" type="video/mp4"></video>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>リストとテーブル</title>
+</head>
+
+<body>
+    <!-- ここから下要素を記述していきます -->
+    <ul>
+        <li>いぬ</li>
+        <li>さる</li>
+        <li>きじ</li>
+    </ul>
+
+    <hr>
+
+    <ol>
+        <li>いぬ</li>
+        <li>さる</li>
+        <li>きじ</li>
+    </ol>
+
+    <hr>
+
+    <p>鬼ヶ島以前に参戦</p>
+    <ol>
+        <li>いぬ</li>
+        <li>さる</li>
+        <li>きじ</li>
+    </ol>
+    <p>鬼ヶ島以後に参戦</p>
+    <ol start="4">
+        <li>いぬ</li>
+        <li>さる</li>
+        <li>きじ</li>
+    </ol>
+
+    <hr>
+
+    <ol type="a">
+        <li>いぬ</li>
+        <li>さる</li>
+        <li>きじ</li>
+    </ol>
+
+    <hr>
+
+    <ol type="A">
+        <li>いぬ</li>
+        <li>さる</li>
+        <li>きじ</li>
+    </ol>
+
+    <hr>
+
+    <P>
+        前掲した桃太郎の家来のうち、Cについては実際には雉ではなく、派手な鳩であったといわれている。
+    </P>
+
+    <hr>
+
+    <dl>
+        <dt>用語</dt>
+        <dd>説明文</dd>
+
+        <dt>いぬ</dt>
+        <dd>最初に家来になった動物。結構強い。</dd>
+
+        <dt>さる</dt>
+        <dd>二番目に家来になった動物。かなり強い。</dd>
+        <dd>一つの用語に対して複数の説明文をつけてもよい。</dd>
+
+        <dt>きじ</dt>
+        <dt>ハト</dt>
+        <dd>複数の用語について一つの説明文をつけてもよい。</dd>
+    </dl>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <td>いぬ</td><td>さる</td><td>きじ</td>
+        </tr>
+        <tr>
+            <td>ワン</td><td>キー</td><td>ケーン</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>若頭</th><th>舎弟１</th><th>舎弟２</th>
+        </tr>
+        <tr>
+            <td>いぬ</td><td>さる</td><td>きじ</td>
+        </tr>
+        <tr>
+            <td>ワン</td><td>キー</td><td>ケーン</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+          <th>若頭</th><td>いぬ</td><td>ワン</td>
+        </tr>
+        <tr>
+          <th>舎弟1</th><td>さる</td><td>キー</td>
+        </tr>
+        <tr>
+          <th>舎弟2</th><td>きじ</td><td>ケーン</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <table border="1">
+        <tr>
+          <td>1-1</td><td>1-2</td><td>1-3</td>
+        </tr>
+        <tr>
+          <td>2-1</td><td colspan="2">2-2</td><td>2-3</td>
+        </tr>
+        <tr>
+          <td>3-1</td><td>3-2</td><td>3-3</td>
+        </tr>
+        <tr>
+          <td>4-1</td><td>4-2</td><td>4-3</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <table border="1">
+        <tr>
+          <td>1-1</td><td>1-2</td><td>1-3</td>
+        </tr>
+        <tr>
+          <td>2-1</td><td colspan="2">2-2</td>
+        </tr>
+        <tr>
+          <td>3-1</td><td>3-2</td><td>3-3</td>
+        </tr>
+        <tr>
+          <td>4-1</td><td>4-2</td><td>4-3</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <table border="1">
+        <tr>
+          <td>1-1</td><td>1-2</td><td>1-3</td>
+        </tr>
+        <tr>
+          <td>2-1</td><td rowspan="2">2-2</td> <td>2-3</td>
+        </tr>
+        <tr>
+          <td>3-1</td><td>3-3</td>
+        </tr>
+        <tr>
+          <td>4-1</td><td>4-2</td><td>4-3</td>
+        </tr>
+      </table>
+
+</body>
+</html>

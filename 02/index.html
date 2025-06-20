@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>田中 太郎 - Webデザイナー & 開発者</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h3>ああああ</h3>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="テーマ切替">
+                <span class="theme-toggle__icon">🌙</span>
+            </button>
+            <button class="nav__toggle" id="navToggle" aria-label="メニュー切替">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-main">ああああ/span>
+                        <span class="hero__title-sub"></span>
+                    </h1>
+                    <p class="hero__description">
+                        デジタル体験を通じて人々の生活を豊かにするWebサイトとアプリケーションを制作しています。
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#about" class="btn btn--primary">About Me</a>
+                        <a href="#portfolio" class="btn btn--outline">作品を見る</a>
+                    </div>
+                </div>
+                <div class="hero__scroll">
+                    <div class="scroll-indicator">
+                        <span>スクロール</span>
+                        <div class="scroll-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">私について</p>
+                </div>
+                <div class="about__content">
+                    <div class="about__image">
+                        <div class="profile-placeholder">
+                            <span>👨‍💻</span>
+                        </div>
+                    </div>
+                    <div class="about__text">
+                        <h3>こんにちは！</h3>
+                        <p>東京を拠点とするWebデザイナー兼開発者です。ユーザー体験を重視した美しく機能的なWebサイトとアプリケーションの制作を専門としています。</p>
+                        <p>HTML/CSS、JavaScript、React、Node.jsなどのモダンな技術を使用して、クライアントのビジョンを現実化することに情熱を注いでいます。</p>
+                        <div class="about__info">
+                            <div class="info-item">
+                                <strong>所在地:</strong> 東京, 日本
+                            </div>
+                            <div class="info-item">
+                                <strong>メール:</strong> tanaka@example.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">技術スキル</p>
+                </div>
+                <div class="skills__grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Photoshop</span>
+                            <span class="skill-level">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-level">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-level">87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="87"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">制作実績</p>
+                </div>
+                <div class="portfolio__grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <div class="project-placeholder">🛒</div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3 class="portfolio-card__title">Eコマースサイト</h3>
+                            <p class="portfolio-card__description">React + Node.jsで構築したモダンなオンラインショップ</p>
+                            <div class="portfolio-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <div class="project-placeholder">🏢</div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3 class="portfolio-card__title">コーポレートサイト</h3>
+                            <p class="portfolio-card__description">レスポンシブ対応の企業ウェブサイト</p>
+                            <div class="portfolio-card__tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <div class="project-placeholder">📱</div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3 class="portfolio-card__title">モバイルアプリUI</h3>
+                            <p class="portfolio-card__description">健康管理アプリのUI/UXデザイン</p>
+                            <div class="portfolio-card__tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Adobe XD</span>
+                                <span class="tech-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <div class="project-placeholder">📊</div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3 class="portfolio-card__title">ダッシュボード</h3>
+                            <p class="portfolio-card__description">データ可視化ダッシュボード</p>
+                            <div class="portfolio-card__tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <div class="project-placeholder">🎨</div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3 class="portfolio-card__title">ブランディング</h3>
+                            <p class="portfolio-card__description">スタートアップのブランドアイデンティティ</p>
+                            <div class="portfolio-card__tech">
+                                <span class="tech-tag">Illustrator</span>
+                                <span class="tech-tag">Photoshop</span>
+                                <span class="tech-tag">InDesign</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <div class="project-placeholder">💬</div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3 class="portfolio-card__title">Webアプリ</h3>
+                            <p class="portfolio-card__description">リアルタイムチャットアプリケーション</p>
+                            <div class="portfolio-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">お問い合わせ</p>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3>お気軽にご連絡ください</h3>
+                        <p>プロジェクトのご相談やお見積りなど、お気軽にお声かけください。</p>
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <strong>📧 メール</strong>
+                                <p>tanaka@example.com</p>
+                            </div>
+                            <div class="contact__item">
+                                <strong>📍 所在地</strong>
+                                <p>東京, 日本</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                            <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                            <a href="https://dribbble.com" target="_blank" class="social-link">Dribbble</a>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">お名前</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">メールアドレス</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">件名</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">メッセージ</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">送信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 田中 太郎. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://dribbble.com" target="_blank">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

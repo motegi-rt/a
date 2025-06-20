@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMA LOVERS - 映画の魔法をあなたと共有</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="logo">
+                    <h1>CINEMA LOVERS</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#reviews">映画レビュー</a></li>
+                        <li><a href="#featured">今月のおすすめ</a></li>
+                        <li><a href="#trends">映画コラム</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">映画の魔法をあなたと共有したい</h2>
+                <p class="hero-subtitle">最新映画のレビューから隠れた名作まで、映画愛好家のためのコミュニティ</p>
+                <button class="btn btn--primary hero-btn">最新レビューを見る</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Movies Section -->
+    <section class="featured-movies" id="featured">
+        <div class="container">
+            <h2 class="section-title">注目の映画</h2>
+            <div class="movies-grid">
+                <div class="movie-card" data-movie="0">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder poster-wicked">ウィキッド</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">ウィキッド ふたりの魔女</h3>
+                        <p class="movie-date">2025年3月7日公開</p>
+                        <p class="movie-director">監督: ジョン・M・チュウ</p>
+                        <div class="movie-rating">
+                            <span class="rating-stars">★★★★★</span>
+                            <span class="rating-score">4.8</span>
+                        </div>
+                        <p class="movie-description">ブロードウェイの名作ミュージカルの映画化。魔法の国オズを舞台に、緑の肌を持つ少女エルファバと人気者のグリンダの友情を描く感動作。</p>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="1">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder poster-mickey">ミッキー17</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">ミッキー17</h3>
+                        <p class="movie-date">2025年2月7日公開</p>
+                        <p class="movie-director">監督: ポン・ジュノ</p>
+                        <div class="movie-rating">
+                            <span class="rating-stars">★★★★☆</span>
+                            <span class="rating-score">4.5</span>
+                        </div>
+                        <p class="movie-description">エドワード・アシュトンの同名小説を「パラサイト」のポン・ジュノ監督が映画化。人類が移住する惑星開拓に送り込まれる使い捨て労働者「ミッキー」の物語。</p>
+                    </div>
+                </div>
+
+                <div class="movie-card" data-movie="2">
+                    <div class="movie-poster">
+                        <div class="poster-placeholder poster-captain">キャプテン・アメリカ</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">キャプテン・アメリカ：ブレイブ・ニュー・ワールド</h3>
+                        <p class="movie-date">2025年2月14日公開</p>
+                        <p class="movie-director">監督: ジュリアス・オナー</p>
+                        <div class="movie-rating">
+                            <span class="rating-stars">★★★★☆</span>
+                            <span class="rating-score">4.3</span>
+                        </div>
+                        <p class="movie-description">MCUシリーズ新章。サム・ウィルソンが受け継いだキャプテン・アメリカとしての初の単独映画。新たな脅威との戦いを描く。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trends Section -->
+    <section class="trends-section" id="trends">
+        <div class="container">
+            <h2 class="section-title">2025年映画トレンド</h2>
+            <div class="trends-content">
+                <div class="chart-container">
+                    <canvas id="genreChart"></canvas>
+                </div>
+                <div class="trends-text">
+                    <h3>今年の映画業界の動向</h3>
+                    <p>2025年はミュージカル映画の復活が顕著で、全体の25%を占めています。特に「ウィキッド」などの大作ミュージカルが話題を集めています。</p>
+                    <p>一方で、SFとアクション映画も根強い人気を保っており、MCUやDCユニバースの新作が映画館を賑わせています。</p>
+                    <p>ドラマ作品では、社会問題を扱った作品が増加傾向にあり、観客の関心の高さがうかがえます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <h2 class="section-title">最新レビュー</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-poster">
+                        <div class="poster-placeholder poster-dune">デューン</div>
+                    </div>
+                    <div class="review-content">
+                        <h3 class="review-title">デューン 砂の惑星PART2</h3>
+                        <div class="review-rating">
+                            <span class="rating-stars">★★★★★</span>
+                            <span class="rating-score">4.7</span>
+                        </div>
+                        <p class="review-excerpt">壮大なスケールと緻密な世界観構築が見事。ヴィルヌーヴ監督の映像美は必見の価値あり。</p>
+                        <div class="review-meta">
+                            <span class="reviewer">映画マニア</span>
+                            <span class="review-date">2025年6月10日</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-poster">
+                        <div class="poster-placeholder poster-inside">インサイド・ヘッド</div>
+                    </div>
+                    <div class="review-content">
+                        <h3 class="review-title">インサイド・ヘッド2</h3>
+                        <div class="review-rating">
+                            <span class="rating-stars">★★★★★</span>
+                            <span class="rating-score">4.9</span>
+                        </div>
+                        <p class="review-excerpt">前作を超える感動と笑い。新たな感情キャラクターの登場で物語に深みが増した傑作。</p>
+                        <div class="review-meta">
+                            <span class="reviewer">アニメ評論家</span>
+                            <span class="review-date">2025年6月5日</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-poster">
+                        <div class="poster-placeholder poster-batman">バットマン</div>
+                    </div>
+                    <div class="review-content">
+                        <h3 class="review-title">ザ・バットマン2</h3>
+                        <div class="review-rating">
+                            <span class="rating-stars">★★★★☆</span>
+                            <span class="rating-score">4.4</span>
+                        </div>
+                        <p class="review-excerpt">マット・リーヴス監督が描くゴッサムの闇がさらに深まった。パティンソンの演技も冴えわたる。</p>
+                        <div class="review-meta">
+                            <span class="reviewer">DCファン</span>
+                            <span class="review-date">2025年5月28日</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="contact">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>最新情報をお届け</h2>
+                <p>新着レビューや映画ニュースをメールでお知らせします</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="メールアドレスを入力" required>
+                        <button type="submit" class="btn btn--primary">登録する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CINEMA LOVERS</h3>
+                    <p>映画の魔法をあなたと共有</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CINEMA LOVERS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

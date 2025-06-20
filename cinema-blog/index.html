@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMA LOVERS - 映画好きのための情報サイト</title>
+    <meta name="description" content="映画好きのための情報発信サイト。最新映画レビューから名作解説まで、映画の魅力を余すことなくお届けします。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h1 class="nav__title">🎬 CINEMA LOVERS</h1>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="#home" class="nav__link">ホーム</a></li>
+                <li class="nav__item"><a href="#reviews" class="nav__link">映画レビュー</a></li>
+                <li class="nav__item"><a href="#recommended" class="nav__link">今月のおすすめ</a></li>
+                <li class="nav__item"><a href="#categories" class="nav__link">映画コラム</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">お問い合わせ</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle btn btn--secondary btn--sm" id="themeToggle">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__background">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1750145231/pplx_project_search_images/680875e923a396470acea0985d8eda9944597aaa.jpg" alt="映画鑑賞の雰囲気" class="hero__bg-image">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content container">
+            <h2 class="hero__title">映画の魔法をあなたと共有したい</h2>
+            <p class="hero__subtitle">最新映画レビューから名作解説まで、映画の魅力を余すことなくお届けします</p>
+            <button class="btn btn--primary btn--lg hero__cta">最新レビューを見る</button>
+        </div>
+    </section>
+
+    <!-- Latest Reviews Section -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <h2 class="section__title">最新記事</h2>
+            <div class="reviews__grid">
+                <article class="review-card" data-rating="5">
+                    <div class="review-card__content">
+                        <div class="review-card__meta">
+                            <span class="review-card__category">特集記事</span>
+                            <span class="review-card__date">2025年6月15日</span>
+                        </div>
+                        <h3 class="review-card__title">2025年期待の大作映画10選</h3>
+                        <p class="review-card__excerpt">今年注目すべき映画作品を厳選してご紹介。ミュージカルからSFまで幅広くお届け</p>
+                        <div class="review-card__footer">
+                            <div class="review-card__rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <span class="review-card__read-time">📖 8分</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card" data-rating="4">
+                    <div class="review-card__content">
+                        <div class="review-card__meta">
+                            <span class="review-card__category">技術解説</span>
+                            <span class="review-card__date">2025年6月12日</span>
+                        </div>
+                        <h3 class="review-card__title">映画館で楽しむ最新技術体験</h3>
+                        <p class="review-card__excerpt">IMAXからDolby Atmosまで、最新の映画館技術について解説</p>
+                        <div class="review-card__footer">
+                            <div class="review-card__rating">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                            <span class="review-card__read-time">📖 6分</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card" data-rating="5">
+                    <div class="review-card__image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1750145231/pplx_project_search_images/1c4486cef5d12fb1cb12fca2fd3a7892a4bb0b98.jpg" alt="ホームシアター" class="review-card__img">
+                    </div>
+                    <div class="review-card__content">
+                        <div class="review-card__meta">
+                            <span class="review-card__category">ホームシアター</span>
+                            <span class="review-card__date">2025年6月10日</span>
+                        </div>
+                        <h3 class="review-card__title">ホームシアター設営完全ガイド</h3>
+                        <p class="review-card__excerpt">自宅で映画館クオリティを楽しむための機材選びとセットアップ方法</p>
+                        <div class="review-card__footer">
+                            <div class="review-card__rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <span class="review-card__read-time">📖 12分</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Movies Section -->
+    <section class="recommended section" id="recommended">
+        <div class="container">
+            <h2 class="section__title">今月のおすすめ映画</h2>
+            <p class="section__subtitle">2025年注目の話題作をご紹介</p>
+            <div class="movies__grid">
+                <div class="movie-card">
+                    <div class="movie-card__content">
+                        <div class="movie-card__genre">ミュージカル</div>
+                        <h3 class="movie-card__title">ウィキッド ふたりの魔女</h3>
+                        <p class="movie-card__cast">アリアナ・グランデ、シンシア・エリヴォ</p>
+                        <p class="movie-card__description">名作ブロードウェイミュージカルを映画化。緑色の肌を持つエルファバと人気者グリンダの友情と冒険を描く</p>
+                        <div class="movie-card__footer">
+                            <span class="movie-card__release">2025年3月7日公開</span>
+                            <div class="movie-card__rating">
+                                <span class="rating-score">4.8</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-card__content">
+                        <div class="movie-card__genre">SF</div>
+                        <h3 class="movie-card__title">ミッキー17</h3>
+                        <p class="movie-card__cast">ロバート・パティンソン</p>
+                        <p class="movie-card__description">未来的なSF作品として期待される話題作</p>
+                        <div class="movie-card__footer">
+                            <span class="movie-card__release">2025年2月7日公開</span>
+                            <div class="movie-card__rating">
+                                <span class="rating-score">4.5</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-card__content">
+                        <div class="movie-card__genre">アクション</div>
+                        <h3 class="movie-card__title">キャプテン・アメリカ：ブレイブ・ニュー・ワールド</h3>
+                        <p class="movie-card__cast">アンソニー・マッキー</p>
+                        <p class="movie-card__description">MCUの新章を開く期待の新作</p>
+                        <div class="movie-card__footer">
+                            <span class="movie-card__release">2025年2月14日公開</span>
+                            <div class="movie-card__rating">
+                                <span class="rating-score">4.6</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-card__content">
+                        <div class="movie-card__genre">ドラマ</div>
+                        <h3 class="movie-card__title">ANORA アノーラ</h3>
+                        <p class="movie-card__description">2024年の映画祭で話題となった現代版プリティ・ウーマン。アカデミー賞有力作品</p>
+                        <div class="movie-card__footer">
+                            <span class="movie-card__release">2025年3月公開</span>
+                            <div class="movie-card__rating">
+                                <span class="rating-score">4.7</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-card__content">
+                        <div class="movie-card__genre">ファンタジー</div>
+                        <h3 class="movie-card__title">白雪姫</h3>
+                        <p class="movie-card__description">ディズニーの名作を実写化した話題作</p>
+                        <div class="movie-card__footer">
+                            <span class="movie-card__release">2025年公開</span>
+                            <div class="movie-card__rating">
+                                <span class="rating-score">4.3</span>
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section" id="categories">
+        <div class="container">
+            <h2 class="section__title">映画カテゴリ</h2>
+            <div class="categories__grid">
+                <div class="category-card">
+                    <div class="category-card__icon">💥</div>
+                    <h3 class="category-card__title">アクション</h3>
+                    <span class="category-card__count">45記事</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">🎭</div>
+                    <h3 class="category-card__title">ドラマ</h3>
+                    <span class="category-card__count">38記事</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">😄</div>
+                    <h3 class="category-card__title">コメディ</h3>
+                    <span class="category-card__count">32記事</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">👻</div>
+                    <h3 class="category-card__title">ホラー</h3>
+                    <span class="category-card__count">24記事</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">🚀</div>
+                    <h3 class="category-card__title">SF</h3>
+                    <span class="category-card__count">28記事</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">🎨</div>
+                    <h3 class="category-card__title">アニメ</h3>
+                    <span class="category-card__count">35記事</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__title">🎬 CINEMA LOVERS</h3>
+                    <p class="footer__description">映画の魔法をあなたと共有したい</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">コンテンツ</h4>
+                        <ul class="footer__list">
+                            <li><a href="#reviews" class="footer__link">映画レビュー</a></li>
+                            <li><a href="#recommended" class="footer__link">おすすめ映画</a></li>
+                            <li><a href="#categories" class="footer__link">映画コラム</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">フォローする</h4>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" target="_blank">📘 Facebook</a>
+                            <a href="#" class="footer__social-link" target="_blank">🐦 Twitter</a>
+                            <a href="#" class="footer__social-link" target="_blank">📷 Instagram</a>
+                            <a href="#" class="footer__social-link" target="_blank">🎥 YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 CINEMA LOVERS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
